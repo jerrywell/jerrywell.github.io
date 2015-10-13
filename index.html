@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<HEAD>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:700,500,400,300,100%7CRoboto+Condensed:400,300%7CAmatic+SC:700" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+    $(".header").hide(0).delay(500).fadeIn(3000)
+});
+	// $(".header").fadeIn("fast",function(){
+ //      $(".intro").fadeIn("fast", function(){
+ //           // etc.
+ //      });
+ //   });
+	</script>
+	<style>
+		body {
+			font-family: 'roboto', 'cwTeXHei', sans-serif;
+			margin: 0;
+			text-align: center;
+		}
+		section {
+			width: 100%;
+			margin: auto;
+			/*background-image: url('img/blue-stripe-bg.png');*/
+			/*background: #81d8d0;*/
+			
+		}
+		header {
+			position: relative;
+			background: #81d8d0;
+			color:#fff;
+			padding: 10px 0;
+			font-size: 2em;
+		}
+		h1 {
+			font-weight: normal;
+		}
+
+/*		.github {
+			background: #fff;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 100px;
+		}
+		ul {
+			text-align: left;
+			margin-top: 120px;
+		}
+		ul.letters {
+			text-align: right;
+			width: 1100px;
+		}
+		li {
+			display: inline-block;
+			list-style: none;
+			width: 60px;
+			height: 45px;
+			border-radius: 60px;
+			background: #fff;
+			text-align: center;
+			padding-top: 15px;
+			font-size: 24px;
+			margin: 15px;
+		}*/
+		article {
+			position: relative;
+			width: 100%;
+			height: 700px;
+			overflow: hidden;
+		}
+		.footer {
+			height:1200px;
+		}
+		.footer img{
+			top: -45%;
+		}
+		.type2 {
+		    height: 650px;
+		}
+		article p {
+/*			
+			
+			
+			text-transform: uppercase;
+			
+			
+			font-weight: 300;
+			text-align: left;
+			margin-left: 20px;
+			margin-top: 0px;
+			margin-bottom: 0px;*/
+			position: absolute;
+			text-align: center;
+			color: #fff;
+			font-size: 140px;
+			font-weight: 700;
+			line-height: 700px;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			font-family: lato (https://www.google.com/fonts/specimen/Lato)
+		}
+/*		div.yeah {
+			color: #333;
+			font-size: 8em;
+			letter-spacing: 20px;
+			margin-top: 500px;
+		}
+		div.yeah p {
+			display: inline-block;
+		}*/
+
+		section {
+			padding-top: 150px;
+			padding-bottom: 0;
+		}
+
+/*		.parallax-window {
+		    min-height: 400px;
+		    background: transparent;
+		}*/
+
+		.year {
+			padding-right: 50%;
+			text-align: right;
+			font-size: 50px;
+			font-weight: 100;
+			color: gray;
+		}
+
+		.intro {
+			padding-left: 50%;
+			text-align: left;
+		}
+
+		.intro h2 {
+			margin: 0;
+			font-weight: 400;
+		}
+		
+		.intro h5 {
+			margin: 10px 0 0 0;
+			font-weight: 300;
+			font-size: 0.95em;
+		}
+
+		.intro h5:nth-of-type(1) {
+			margin-top: 30px;
+		}
+
+		.intro h5:nth-of-type(3) {
+			margin-top: 30px;
+		}
+
+		@font-face {
+			font-family: 'cwTeXHei';
+			font-style: normal;
+			font-weight: 500;
+			src: url(https://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+			src: url(https://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'),
+			url(https://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'),
+			url(https://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'),
+			url(https://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+		}
+
+		@media (max-width: 1200px) {
+		    article {
+		    	height: 400px;
+		    }
+		    article p {
+		    	line-height: 400px;
+		    	font-size: 90px;
+		    }
+		    .footer {
+				height:900px;
+			}
+			.footer img{
+				top: -30%;
+			}
+		}
+
+		@media (max-width: 960px) {
+		    article {
+		    	height: 400px;
+		    }
+		    article p {
+		    	line-height: 400px;
+		    	font-size: 90px;
+		    }
+		   .footer {
+				height:800px;
+			}
+			.footer img{
+				top: -30%;
+			}
+		}
+
+		@media (max-width: 760px) {
+		    article {
+		    	height: 300px;
+		    }
+		    article p {
+		    	line-height: 300px;
+		    	font-size: 60px;
+		    }
+		   .footer {
+				height:600px;
+			}
+			.footer img{
+				top: -20%;
+			}
+		    
+		}
+
+		@media (max-width: 480px) {
+		    article {
+		    	height: 250px;
+		    }
+		    article p {
+		    	line-height: 250px;
+		    	font-size: 40px;
+		    }
+		    section {
+		    	padding-top: 100px;
+		    }
+		   .footer {
+				height:600px;
+			}
+			.footer img{
+				top: -20%;
+			}
+		}
+		.redfont {
+			color: #ff0000;
+		}
+
+		.button {
+		  color: #900;
+		  font-weight: bold;
+		}
+	</style>
+</HEAD>
+<body>
+			<!-- <header>
+				<h1>Jerry & Alison's Big Day</h1>
+		</header> -->
+			 <article class="parallax-window" data-parallax='scroll' data-image-src="img/089A7846.jpg">
+					<p>JERRY & ALISON</p>
+		    </article>
+		    <!-- <article>
+					<img src="img/089A7676.jpg" width="100%" alt="Paris" data-parallax='{}' style="top:-500px;"/>
+					<p>Jerry & Alison's Big Day</p>
+		    </article> -->
+		    
+			<section class="one">
+				<div>
+					<div class="year">2009</div>
+					<div class="intro">
+						<h2>春天</h2>
+						<h2>資管系辦走廊</h2>
+						<h5>「 你就是傳說中的體育系? 」</h5>
+						<h5>「 學姐你好 」</h5>
+						<h5> ... (拜託 我們同屆好嗎)</h5>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</section>
+			
+			<section class="second">
+				<div>
+					<div class="year">2014</div>
+					<div class="intro">
+						<h2>秋天</h2>
+						<h2>宜蘭</h2>
+						<h5>一輩子的承諾</h5>
+						<h5><a target="_blank" href="https://www.youtube.com/watch?v=JfvjRl9JCao&feature=youtu.be" style="color:#000; font-style: normal;text-decoration: none;">more...</a></h5>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</section>
+
+			<section class="second">
+				<div>
+					<div class="year">2016</div>
+					<div class="intro">
+						<h2>一月九日</h2>
+						<h2>京華城 雅悅會館</h2>
+						<h5>我們要結婚了!</h5>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</section>
+
+
+			<section style="max-width: 1024px; text-align:center; margin: 0 auto;">
+				<!-- Change the width and height values to suit you best -->
+<!-- <div class="typeform-widget" data-url="https://b80203.typeform.com/to/NK12Ub" data-text="Jerry &amp; Alison" style="width:100%;height:500px;"></div>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=typeform_NK12Ub&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=繁體字" style="color: #999" target="_blank">Typeform</a></div>
+ -->
+
+				<h2>婚禮邀請</h2>
+				<h3>日期: 2016/1/9 18:00</h3>
+				<h3>地點: 京華城 雅悅會館</h3>
+				<a class="typeform-share button" href="https://b80203.typeform.com/to/NK12Ub" data-mode="1" target="_blank" style="color:#fff; background: #4fb0ae; border: 1px solid #333; height: 45px; font-size: 20px; line-height: 45px; float: none;     display: inline-block; margin: 20px 0 150px 0">JOIN</a>
+				<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+
+
+
+
+
+			</section>
+
+			<img src="img/089A8001.jpg" width="100%" />
+			<img src="img/089A7872.jpg" width="100%" />
+			<img src="img/089A7760.jpg" width="100%" />
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/parallax.min.js"></script>
+	<!--<script src="js/jquery.parallax-scroll.js"></script>-->
+</body>
+</html>
